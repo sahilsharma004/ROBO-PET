@@ -1,0 +1,38 @@
+🔧 Components Required
+
+Component	Quantity	Purpose
+ESP32 Dev Module	1	Main microcontroller
+L298N Motor Driver	1	Controls 2 BO motors
+BO Motors (6V–12V)	2	Drive the robot
+Ultrasonic Sensor (HC-SR04)	1	Detects front obstacles
+IR Sensor Module (Surface)	1	Detects surface/edge below the robot
+IR Sensor Module (Eyes)	1	Triggers eye animation on OLED
+OLED Display (0.96", I2C)	1	Robot eye display
+Jumper Wires (Male–Male)	~20	Connections
+Battery Pack (7.4V–12V)	1	Power for motors via L298N
+Breadboard (optional)	1	Neat connections (optional)
+
+📡 Sensor Connections
+
+🔷 Ultrasonic Sensor (HC-SR04)
+Pin	Connect To ESP32 Pin
+VCC	5V
+GND	GND
+TRIG	D5
+ECHO	D18
+🔷 IR Surface Detection Sensor
+Pin	Connect To ESP32 Pin
+VCC	3.3V / 5V
+GND	GND
+OUT	D4
+🔷 IR Display Trigger Sensor (for OLED eyes)
+Pin	Connect To ESP32 Pin
+VCC	3.3V / 5V
+GND	GND
+OUT	D34
+🔷 OLED Display (I2C)
+Pin	Connect To ESP32 Pin
+VCC	3.3V
+GND	GND
+SDA	D21
+SCL	D22
